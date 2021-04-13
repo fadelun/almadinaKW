@@ -1,0 +1,68 @@
+body {
+  font-family: "Poppins";
+  position: relative;
+}
+.jumbotron {
+  position: relative;
+  background-image: url(img/bg-jumbotron.png);
+  background-size: cover;
+  height: 550px;
+}
+
+.jumbotron img {
+  /* position: relative; */
+  width: 100%;
+  height: 100%;
+}
+
+.jumbotron .container {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.jumbotron-title {
+  font-size: 36px !important;
+}
+
+.content {
+  position: absolute;
+  top: 570px;
+  left: 0;
+  right: 0;
+}
+
+.thubmnail .col {
+  background-color: aqua;
+  /* width: 390px; */
+  height: 100px;
+  box-shadow: -4px 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+.banner {
+  background-color: aqua;
+  height: 480px;
+}
+
+.banner .page-1 {
+  padding: 0;
+  /* background-image: url(img/banner.jpg); */
+  /* background-size: cover; */
+}
+
+.page-1 img {
+  width: 100%;
+  height: 100%;
+  background: 00aec3;
+}
+
+.page-2 {
+  background: #00aec3;
+}
+
+/* .jumbotron::after {
+  content: "";
+  background-image: linear-gradient(red, yellow, blue);
+  height: 400px;
+  width: 100%;
+} */

@@ -1,0 +1,103 @@
+body section .container {
+  margin-top: 120px;
+}
+
+body section .container ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: start;
+}
+
+body section .container ul li {
+  margin-right: 9%;
+}
+
+body section .container ul li a {
+  color: #00aec3;
+  text-decoration: none;
+}
+
+body section .container .main-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  grid-template-rows: repeat(5, 200px);
+  gap: 0.5rem;
+  margin-bottom: 13%;
+}
+
+body section .container .main-grid .grid {
+  background-color: #8e2897;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  font-size: 20px;
+}
+
+body section .container .main-grid .grid-1 {
+  grid-area: 1 / 1 / 3 / 4;
+}
+
+body section .container .main-grid .grid-2 {
+  grid-area: 1 / 4 / 2 / 5;
+}
+
+body section .container .main-grid .grid-3 {
+  grid-area: 2 / 4 / 3 / 5;
+}
+
+body section .container .main-grid .grid-4 {
+  grid-area: 3 / 1 / 5 / 2;
+}
+
+body section .container .main-grid .grid-5 {
+  grid-area: 3 / 2 / 4 / 4;
+}
+
+body section .container .main-grid .grid-6 {
+  grid-area: 3 / 4 / 6 / 5;
+}
+
+body section .container .main-grid .grid-7 {
+  grid-area: 5 / 1 / 6 / 2;
+}
+
+body section .container .main-grid .grid-8 {
+  grid-area: 4 / 2 / 6 / 4;
+}
+
+body section .container .gallery-list {
+  display: grid;
+  height: 800px;
+  overflow: auto;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: repeat(9, minmax(200px, 1fr));
+  gap: 1em;
+}
+
+body section .container .gallery-list .grid {
+  background-color: #00aec3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  body .container .main-grid {
+    grid-template-columns: repeat(auto-fit, 95%) !important;
+    grid-template-rows: repeat(8, 200px) !important;
+  }
+  body .container .main-grid .grid-1,
+  body .container .main-grid .grid-2,
+  body .container .main-grid .grid-3,
+  body .container .main-grid .grid-4,
+  body .container .main-grid .grid-5,
+  body .container .main-grid .grid-6,
+  body .container .main-grid .grid-7,
+  body .container .main-grid .grid-8 {
+    grid-area: auto !important;
+  }
+}
+/*# sourceMappingURL=gallery-style.css.map */
