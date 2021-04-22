@@ -1,23 +1,23 @@
-body section .container {
+body .gallery-content .container {
   margin-top: 120px;
 }
 
-body section .container ul {
+body .gallery-content .container ul {
   display: flex;
   list-style-type: none;
   justify-content: start;
 }
 
-body section .container ul li {
+body .gallery-content .container ul li {
   margin-right: 9%;
 }
 
-body section .container ul li a {
+body .gallery-content .container ul li a {
   color: #00aec3;
   text-decoration: none;
 }
 
-body section .container .main-grid {
+body .gallery-content .container .main-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
   grid-template-rows: repeat(5, 200px);
@@ -25,7 +25,7 @@ body section .container .main-grid {
   margin-bottom: 13%;
 }
 
-body section .container .main-grid .grid {
+body .gallery-content .container .main-grid .grid {
   background-color: #8e2897;
   display: flex;
   justify-content: center;
@@ -34,39 +34,39 @@ body section .container .main-grid .grid {
   font-size: 20px;
 }
 
-body section .container .main-grid .grid-1 {
+body .gallery-content .container .main-grid .grid-1 {
   grid-area: 1 / 1 / 3 / 4;
 }
 
-body section .container .main-grid .grid-2 {
+body .gallery-content .container .main-grid .grid-2 {
   grid-area: 1 / 4 / 2 / 5;
 }
 
-body section .container .main-grid .grid-3 {
+body .gallery-content .container .main-grid .grid-3 {
   grid-area: 2 / 4 / 3 / 5;
 }
 
-body section .container .main-grid .grid-4 {
+body .gallery-content .container .main-grid .grid-4 {
   grid-area: 3 / 1 / 5 / 2;
 }
 
-body section .container .main-grid .grid-5 {
+body .gallery-content .container .main-grid .grid-5 {
   grid-area: 3 / 2 / 4 / 4;
 }
 
-body section .container .main-grid .grid-6 {
+body .gallery-content .container .main-grid .grid-6 {
   grid-area: 3 / 4 / 6 / 5;
 }
 
-body section .container .main-grid .grid-7 {
+body .gallery-content .container .main-grid .grid-7 {
   grid-area: 5 / 1 / 6 / 2;
 }
 
-body section .container .main-grid .grid-8 {
+body .gallery-content .container .main-grid .grid-8 {
   grid-area: 4 / 2 / 6 / 4;
 }
 
-body section .container .gallery-list {
+body .gallery-content .container .gallery-list {
   display: grid;
   height: 800px;
   overflow: auto;
@@ -75,7 +75,7 @@ body section .container .gallery-list {
   gap: 1em;
 }
 
-body section .container .gallery-list .grid {
+body .gallery-content .container .gallery-list .grid {
   background-color: #00aec3;
   display: flex;
   justify-content: center;
@@ -85,19 +85,30 @@ body section .container .gallery-list .grid {
 }
 
 @media (max-width: 768px) {
-  body .container .main-grid {
-    grid-template-columns: repeat(auto-fit, 95%) !important;
+  body .gallery-content {
+    background: white;
+  }
+  body .gallery-content .main-grid {
+    text-align: center;
+    grid-template-columns: repeat(auto-fit, 100%) !important;
     grid-template-rows: repeat(8, 200px) !important;
   }
-  body .container .main-grid .grid-1,
-  body .container .main-grid .grid-2,
-  body .container .main-grid .grid-3,
-  body .container .main-grid .grid-4,
-  body .container .main-grid .grid-5,
-  body .container .main-grid .grid-6,
-  body .container .main-grid .grid-7,
-  body .container .main-grid .grid-8 {
+  body .gallery-content .main-grid .grid-1,
+  body .gallery-content .main-grid .grid-2,
+  body .gallery-content .main-grid .grid-3,
+  body .gallery-content .main-grid .grid-4,
+  body .gallery-content .main-grid .grid-5,
+  body .gallery-content .main-grid .grid-6,
+  body .gallery-content .main-grid .grid-7,
+  body .gallery-content .main-grid .grid-8 {
     grid-area: auto !important;
+  }
+}
+
+@media (max-width: 600px) {
+  body section ul {
+    padding: 3px 0;
+    display: block !important;
   }
 }
 /*# sourceMappingURL=gallery-style.css.map */
