@@ -2,7 +2,7 @@ $color: #00aec3;
 $color-2: #ffd845;
 
 body {
-  section {
+  .gallery-content {
     .container {
       margin-top: 120px;
       ul {
@@ -85,9 +85,12 @@ body {
 // landscape responsive
 @media (max-width: 768px) {
   body {
-    .container {
+    .gallery-content {
+      background: white;
+
       .main-grid {
-        grid-template-columns: repeat(auto-fit, 95%) !important;
+        text-align: center;
+        grid-template-columns: repeat(auto-fit, 100%) !important;
         grid-template-rows: repeat(8, 200px) !important;
         // overflow-y: scroll;
 
@@ -101,6 +104,17 @@ body {
         .grid-8 {
           grid-area: auto !important;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    section {
+      ul {
+        padding: 3px 0;
+        display: block !important;
       }
     }
   }
