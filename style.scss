@@ -100,7 +100,6 @@ body {
 
       .page-2 {
         display: flex;
-        // justify-content: center;
         align-items: center;
         padding: 5%;
 
@@ -149,10 +148,14 @@ body {
         }
 
         .card-text {
-          // position: absolute;
           font-weight: 600;
-          // line-height: 22px;
         }
+      }
+
+      #next-arrow {
+        color: #27ae60;
+        text-decoration: none;
+        font-size: 0.88rem;
       }
     }
 
@@ -164,7 +167,7 @@ body {
         display: flex;
         flex-direction: row;
         overflow-x: scroll;
-        position: absolute;
+        // position: absolute;
         left: 8vw;
         width: 100%;
         li {

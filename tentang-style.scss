@@ -1,0 +1,69 @@
+$color: #00aec3;
+$color-2: #ffd845;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins";
+
+  .navbar {
+    position: fixed !important;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 999;
+
+    .navbar-brand {
+      font-family: "Arial";
+      span {
+        font-family: "Andalus";
+        color: $color;
+      }
+    }
+
+    .navbar-nav {
+      font-size: 16px;
+
+      li.nav-item {
+        margin-right: 2vw;
+
+        .nav-link {
+          color: $color !important;
+          box-sizing: border-box !important;
+
+          &:hover {
+            color: $color-2 !important;
+          }
+        }
+      }
+    }
+  }
+
+  .content {
+    margin-top: 200px;
+    .article {
+      img {
+        width: 100%;
+        // height: 22em;
+        margin-bottom: 2em;
+      }
+    }
+  }
+
+  footer {
+    background-color: #252525;
+    color: #bdbdbd;
+    padding-top: 1.25%;
+
+    .brand {
+      font-family: "Arial";
+      color: black;
+      span {
+        font-family: "Andalus";
+        color: $color;
+      }
+    }
+  }
+}

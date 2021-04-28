@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins";
+}
+
+body .navbar {
+  position: fixed !important;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 999;
+}
+
+body .navbar .navbar-brand {
+  font-family: "Arial";
+}
+
+body .navbar .navbar-brand span {
+  font-family: "Andalus";
+  color: #00aec3;
+}
+
+body .navbar .navbar-nav {
+  font-size: 16px;
+}
+
+body .navbar .navbar-nav li.nav-item {
+  margin-right: 2vw;
+}
+
+body .navbar .navbar-nav li.nav-item .nav-link {
+  color: #00aec3 !important;
+  box-sizing: border-box !important;
+}
+
+body .navbar .navbar-nav li.nav-item .nav-link:hover {
+  color: #ffd845 !important;
+}
+
+body .content {
+  margin-top: 200px;
+}
+
+body .content .article img {
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+body footer {
+  background-color: #252525;
+  color: #bdbdbd;
+  padding-top: 1.25%;
+}
+
+body footer .brand {
+  font-family: "Arial";
+  color: black;
+}
+
+body footer .brand span {
+  font-family: "Andalus";
+  color: #00aec3;
+}
+/*# sourceMappingURL=tentang-style.css.map */

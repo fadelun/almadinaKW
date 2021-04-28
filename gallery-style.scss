@@ -15,6 +15,14 @@ body {
           a {
             color: $color;
             text-decoration: none;
+
+            &.active {
+              border-bottom: 2px solid #27ae60;
+            }
+
+            &:hover {
+              color: $color-2;
+            }
           }
         }
       }

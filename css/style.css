@@ -149,6 +149,12 @@ body .features .feature-1 .card .card-text {
   font-weight: 600;
 }
 
+body .features .feature-1 #next-arrow {
+  color: #27ae60;
+  text-decoration: none;
+  font-size: 0.88rem;
+}
+
 body .features .feature-2 {
   background-image: linear-gradient(to right, #00c4dc, #005560);
   height: 300px;
@@ -159,7 +165,6 @@ body .features .feature-2 .video-list {
   display: flex;
   flex-direction: row;
   overflow-x: scroll;
-  position: absolute;
   left: 8vw;
   width: 100%;
 }

@@ -1,0 +1,151 @@
+body {
+  font-family: "Poppins";
+}
+
+body .navbar {
+  position: fixed !important;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 999;
+}
+
+body .navbar .navbar-brand {
+  font-family: "Arial";
+}
+
+body .navbar .navbar-brand span {
+  font-family: "Andalus";
+  color: #00aec3;
+}
+
+body .navbar .navbar-nav {
+  font-size: 16px;
+}
+
+body .navbar .navbar-nav li.nav-item {
+  margin-right: 2vw;
+}
+
+body .navbar .navbar-nav li.nav-item .nav-link {
+  color: #00aec3 !important;
+  box-sizing: border-box !important;
+}
+
+body .navbar .navbar-nav li.nav-item .nav-link:hover {
+  color: #ffd845 !important;
+}
+
+body header {
+  margin-top: 60px;
+  height: 375px;
+  background-image: url(../img/bg-header-akademik.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: aliceblue;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+body header h1 {
+  font-weight: 600;
+  justify-content: end;
+  display: inline !important;
+}
+
+body section {
+  margin-top: 120px;
+}
+
+body section .article {
+  display: flex;
+  justify-content: space-between;
+}
+
+body section .article-1 {
+  margin-bottom: 14em;
+}
+
+body section .article-1 .text {
+  width: 50%;
+  text-align: center;
+}
+
+body section .article-1 .text .description {
+  font-size: 1.1em;
+  color: #00aec3;
+}
+
+body section .article-1 .image {
+  width: 40%;
+  height: 280px;
+  background: gray;
+}
+
+body section .article-2 .text {
+  width: 50%;
+  text-align: center;
+}
+
+body section .article-2 .text .description {
+  font-size: 1.1em;
+  color: #00aec3;
+}
+
+body section .article-2 .image {
+  order: -1;
+  width: 40%;
+  height: 280px;
+  background: gray;
+}
+
+body .feature {
+  margin-top: 100px;
+  background-image: linear-gradient(to right, #00c4dc, #005560);
+  height: 300px;
+}
+
+body .feature .video-list {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  left: 8vw;
+  width: 100%;
+}
+
+body .feature .video-list li {
+  display: inline-block;
+  margin-right: 1.5vw;
+}
+
+body footer {
+  background-color: #252525;
+  color: #bdbdbd;
+  padding-top: 1.25%;
+}
+
+body footer .brand {
+  font-family: "Arial";
+  color: black;
+}
+
+body footer .brand span {
+  font-family: "Andalus";
+  color: #00aec3;
+}
+
+@media (max-width: 600px) {
+  body section {
+    display: block;
+  }
+  body section .article .text {
+    width: 100%;
+    padding: 0 20px;
+  }
+  body section .article .image {
+    display: none;
+  }
+}
+/*# sourceMappingURL=class-style.css.map */
